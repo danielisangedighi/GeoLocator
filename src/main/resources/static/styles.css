@@ -1,0 +1,116 @@
+/* styles.css */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    background-color: #f6f8fa;
+    color: #24292e;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h4, h1, p {
+    color: #24292e;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 16px;
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(27, 31, 35, 0.12), 0 8px 24px rgba(27, 31, 35, 0.12);
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+input[type="text"], input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 16px;
+    border: 1px solid #d1d5da;
+    border-radius: 4px;
+    background-color: #fafbfc;
+    font-size: 14px;
+}
+
+button {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #24292e;
+    padding: 14px 16px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+}
+
+table th, table td {
+    border: 1px solid #d1d5da;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f6f8fa;
+    font-weight: 600;
+}
