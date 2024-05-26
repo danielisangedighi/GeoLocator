@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advisory</title>
+</head>
+<body>
+    <!-- navigation bar to either pages-->
+    <div class="topnav">
+        <a th:href="@{/home}">Home</a>
+        <a class="active" th:href="@{/view}">Advisory</a>
+    </div>
+
+    <header>
+        <h1>Advisory Blog</h1>
+    </header>
+
+    <h4>Your location is as below:</h4>
+    <div>
+        <table>
+            <tr>
+                <th>Longitude</th>
+                <th>Latitude</th>
+            </tr>
+            <tr>
+                <td th:text="${location.longitude}"></td>
+                <td th:text="${location.latitude}"></td>
+            </tr>
+        </table>
+    </div>
+    
+    <main>
+        <article>
+            <p>...To be populated by AI API response...</p>
+            <p>...To be populated by AI API response...</p>
+        </article>
+    </main>
+</body>
+</html>

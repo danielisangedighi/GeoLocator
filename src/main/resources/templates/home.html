@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Advisor</title>
+</head>
+
+<body>
+    <!-- navigation bar to either pages-->
+    <div class="topnav">
+        <a class="active" th:href="@{/home}">Home</a>
+        <a th:href="@{/view}">Advisory</a>
+    </div>
+
+    <h2>Advisor</h2>
+
+    <!-- Welcome note -->
+    <h4 th:text=" 'Welcome '+ ${username}"></h4>
+
+    <p>Do you need advise on your present location?</p>
+    <form action="/home" method="post" th:object="${location}" th:action="@{/getAdvise}">
+        <!--main function-->
+        <button type="submit">Ask Me !</button>
+        
+    </form>
+</body>
+</html>
