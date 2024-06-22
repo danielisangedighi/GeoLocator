@@ -17,6 +17,7 @@ public class AdvisorService {
         String url = "https://ipinfo.io/json?token=" + ipinfoToken;
 
         RestTemplate restTemplate = new RestTemplate();
+        @SuppressWarnings("unchecked")
         Map<String, Object> response = restTemplate.getForObject(url, Map.class);
 
         if (response != null && response.containsKey("loc")) {
